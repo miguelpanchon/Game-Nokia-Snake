@@ -8,9 +8,10 @@
 - Chain of thought and explain your reasoning at the end of the answer
 
 ## Types of questions
--i will be asking two types of questions:	
-	-"how could we best" meaining i would like to understand how you would solve it
-	-"code functionality x" where i will be asking you to code some functionality the way we discussed before
+I'll be asking 2 types of questions:
+- "how could we best" meaining i would like to understand how you would solve it
+- "code functionality x" where i will be asking you to code some functionality the way we discussed before
+
 
 ## Project-Specific Guidelines
 - Use **HTML5**, **CSS3**, and **JavaScript (ES6+)** for web development projects.

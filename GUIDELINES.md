@@ -23,4 +23,4 @@ I'll be asking 2 types of questions:
 
 ## References
 - Refer to the `README.md` for project details.
-- Check the annex of `README.md` for pending tasks
+- Check the `README.md` for pending tasks

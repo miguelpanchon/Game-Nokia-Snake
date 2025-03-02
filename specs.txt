@@ -1,0 +1,143 @@
+1. Technical Stack:
+
+HTML5 for structure
+CSS3 for styling
+Vanilla JavaScript (or you could consider a framework if needed)
+Local Storage for saving scores/preferences
+
+Canvas vs. DIV-based grid (Canvas recommended for better performance)
+Modular JavaScript structure (separate files for game logic, controls, UI)
+CSS variables for theme switching
+
+every parameter to be used in JavaScript to be stored under the 
+
+
+2. Visual Design & UI:
+
+Dark mode/Light mode toggle
+Responsive design for different screen sizes
+Modern, minimalist interface
+Smooth animations for better user experience
+Clear visual feedback for user actions
+
+Grid system: square cells (e.g., 20x20 pixels each). The seize can be selected in the user settings 
+Snake color schemes for different themes
+Score display in prominent position
+Responsive canvas sizing based on screen size
+
+Movement Controls:
+
+Arrow keys (↑, ↓, ←, →) or WASD
+Snake moves continuously in the current direction
+Can't reverse direction (e.g., can't go right when moving left)
+
+
+3. Game Elements:
+
+Snake (grows when eating food)
+Food (randomly appears on grid)
+Game boundaries
+Score display
+
+Snake representation: array of coordinates
+Food: random position generator (avoiding snake body)
+Score counter
+
+
+
+4. Additional Features:
+
+Sound effects (with mute option) for: 
+Movement
+Eating food
+Game over
+Simple tutorial overlay for 3 seconds at the start of each game (the user can determine for how long and its stored in settings section)
+Tutorial/How to play section
+
+
+5. Game Mechanics:
+Snake dies if it hits:
+Walls (unless it's a wraparound version)
+Itself
+
+Score increases when snake eats food
+Snake grows longer after eating food
+
+Collision detection system
+Speed increase as score grows (stored in local settings  and the suser can change it)
+Direction change validation:
+This means checking if the new direction the player wants to move is allowed. 
+Game loop timing (requestAnimationFrame)
+
+
+
+In Snake:
+You can't make a 180-degree turn
+The snake can't instantly reverse its direction
+
+
+
+
+6. User Preferences:
+
+Save dark/light mode preference
+Theme preference
+
+Volume settings
+Username/Player profile
+
+Difficulty level preference
+
+Dynamic Speed Adjustment:
+Speed reduces temporarily after eating food
+
+Player-Controlled Speed:
+Manual speed control through settings and keyboard while playing -> through keyboard input: + and - 
+Speed boost button for temporary acceleration (stored and editable by player)
+Speed reduction power-ups (stored and editable by player)
+
+Custom speed presets saved in user preferences
+Adaptive Speed System:
+Analyzes player performance
+Adjusts speed based on collision frequency
+Learns from player patterns
+Provides personalized difficulty scaling
+
+Each method can be:
+Stored in user preferences
+Modified through settings
+Combined with other methods
+Reset between games
+
+Seize of the screen to play the game. Suggest 3 seizes: full screen and a smaller one
+Time limit
+
+Personal High scores
+
+
+annex: zoom on requestAnimationFrame:
+Purpose:
+Controls the game's update and render cycle
+Manages smooth animation and movement
+Handles game speed and timing
+How it works:
+Browser calls the game loop function before each screen refresh
+Typically runs at 60 frames per second (60 FPS)
+Updates snake position, checks collisions, and redraws the game
+Benefits:
+Smoother animations than setInterval/setTimeout
+Better performance and battery life
+Automatically pauses when tab is inactive
+Prevents screen tearing
+Adapts to different screen refresh rates
+Game Speed Control:
+Can control snake movement speed
+Allows for difficulty adjustment
+Enables speed increases as score grows
+Maintains consistent speed across different devices
+Integration with Game Features:
+Handles pause functionality
+Controls animation timing
+Manages game state updates
+Coordinates with user input
+

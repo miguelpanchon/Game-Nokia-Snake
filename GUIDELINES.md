@@ -21,6 +21,11 @@ I'll be asking 2 types of questions:
 ## Communication Style
 - Be professional but approachable.
 
+## When suggesting code
+-Always include reasoning for the changes first
+-Then mention the file that has to be changed
+-repeat the last point if there are multiple files to be changed
+
 ## References
 - Refer to the `README.md` for project details.
 - Check the `README.md` for pending tasks

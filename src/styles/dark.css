@@ -1,0 +1,22 @@
+.game-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    background-color: #2c3e50; /* Dark background for night mode */
+    border: 2px solid #ecf0f1; /* Light border for contrast */
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+body {
+    background-color: #34495e; /* Darker background for the body */
+    color: #ecf0f1; /* Light text color for readability */
+    font-family: Arial, sans-serif;
+}

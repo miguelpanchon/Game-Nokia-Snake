@@ -30,11 +30,7 @@ The idea of this game is to pay tribute to this amazing game
   - [Done](#done)
 TBD
 
-## Installation
-### Instructions on how to set up the project locally.
-TBD
-### Include any dependencies and steps to install them.
-TBD
+
 
 ## Usage
 - Open the `index.html` file in your browser.
@@ -50,8 +46,7 @@ TBD
 - HTML5
 - CSS3
 - JavaScript (ES6+)
-- [Font Awesome](https://fontawesome.com/) for icons
-TBD
+- [Font Awesome](https://fontawesome.com/)
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
@@ -70,7 +65,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 	-providing a basic structure of a 	Readme file
 
 ## Contact
-- Email: your-email@example.com
+- Email: enheduanna2300BC@proton.me 
 - GitHub: [your-username](https://github.com/your-username)
 TBD
 
@@ -82,13 +77,14 @@ TBD
 
 Set up:
 - [x] Set up GitHub repo
-- [] Initialize project structure
+- [x] Initialize project structure
 
 ### To Do
 
-- [ ] Design homepage
-- [ ] Write CSS for mobile view
+- [x] Design homepage
+- [x] Write CSS for mobile view
 - [ ] Implement dark mode
+- [] Implement highscore as part of the initial screen explaining the controls (only best 3 games). Stored locally for each player
 
 ### In Progress
 - [ ] Fix navbar bug

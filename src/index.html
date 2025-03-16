@@ -7,23 +7,33 @@
     <title>Nokia Snake Game</title>
     <style>
         body {
+            margin: 0;
+            overflow: hidden;
+            /* Prevent scrolling */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #2F2F2F;
+            /* Full viewport height */
+            background-color: #34495e;
+            /* Background color */
         }
 
         canvas {
-            border: 4px solid #1a1a1a;
+            display: block;
+            /* Remove inline spacing */
         }
     </style>
+
+    <link rel="stylesheet" href="./styles/global.css"> <!-- Updated to use existing CSS file -->
+    <link rel="icon" href="./assets/images/mp.ico" type="image/x-icon"> <!-- Added favicon -->
+
+
 </head>
 
 <body>
     <canvas id="gameCanvas"></canvas>
-    <script src="main.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>

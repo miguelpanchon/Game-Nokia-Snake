@@ -1,104 +1,27 @@
-# My Project Name
-Game1: Nokia Snake
+# Game Development Plan
 
-## Description
-The snake was a game that came installed on Nokia cellular phones that was very popular
+## Current Functionalities
+- The game includes basic mechanics such as player movement and collision detection.
+- Power-ups are added after achieving 100 points, with additional power-ups introduced every 100 points.
+- Obstacles will be added after every 150 points.
 
-*1997: Nokia 6110 launched with the original Snake game.
-*1998: Nokia continued to include Snake in other models, such as the Nokia 5110, which also became very popular.
-*2000s: Variations of Snake (like Snake II) were included in many Nokia phones, such as the Nokia 3310 (released in 2000), which is one of the most famous phones to feature the game.
+## Next Possible Tasks
+1. **Improve Game Mechanics**:
+   - Add new power-ups and obstacles to enhance gameplay.
+   - Implement a scoring system that rewards players for achieving specific milestones.
 
-The idea of this game is to pay tribute to this amazing game
+2. **Enhance Audio Management**:
+   - Add background music options and allow users to toggle sound effects.
+   - Implement volume controls for different audio elements.
 
+3. **User Interface Improvements**:
+   - Design a more engaging start screen with instructions.
+   - Add a settings menu for game preferences (e.g., sound, difficulty).
 
-## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-  - [Instructions](#instructions)
-  - [Dependencies](#dependencies)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
-- [Anex: Project Plan](#anex-project-plan)
-  - [Set Up](#set-up)
-  - [To Do](#to-do)
-  - [In Progress](#in-progress)
-  - [Done](#done)
-TBD
+4. **Testing and Debugging**:
+   - Conduct thorough testing to identify and fix any bugs.
+   - Gather feedback from users to improve gameplay experience.
 
-
-
-## Usage
-- Open the `index.html` file in your browser.
-- Start the game
-- Move the snake with the aim of getting larger by eating items. Becareful not to bump against the walls of the screen or your own tail. 
-
-## Features
-- Responsive design for mobile and desktop.
-- Dark mode toggle.
-TBD
-
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- [Font Awesome](https://fontawesome.com/)
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-- Thanks to [MDN Web Docs](https://developer.mozilla.org/) for their amazing documentation.
-- DeepSeek for help with the following:
-	-providing a basic structure of a 	Readme file
-
-## Contact
-- Email: enheduanna2300BC@proton.me 
-- GitHub: [your-username](https://github.com/your-username)
-TBD
-
-
-
-
-# Anex: Project Plan
-
-
-Set up:
-- [x] Set up GitHub repo
-- [x] Initialize project structure
-
-### To Do
-
-- [x] Design homepage
-- [x] Write CSS for mobile view
-- [ ] Implement dark mode
-- [] Implement highscore as part of the initial screen explaining the controls (only best 3 games). Stored locally for each player
-
-### In Progress
-- [ ] Fix navbar bug
-
-### Done
-
-
-### Considered but discarded
--own domain -> no need
--wiki for the project. Solo project -> Finally discarded. Considered platforms:
-	-Confluence: A powerful tool for team collaboration and documentation.
-	-Notion: A flexible all-in-one workspace for notes, docs, and wikis.
-	-GitHub Wiki: Built into GitHub repositories for code-related projects.
-	-MediaWiki: Open-source software used by Wikipedia (requires hosting).
-	-Slab: A modern knowledge base for teams.
-	-Google Sites: Simple and free for basic wikis.
-	-Microsoft SharePoint: For organizations using Microsoft 365.
+5. **Deployment and Marketing**:
+   - Create a promotional plan for the game launch.
+   - Share the game on social media and gaming forums to attract players.

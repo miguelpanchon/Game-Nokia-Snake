@@ -1,3 +1,6 @@
+always start the conversation by reading all the project files and understanding the project structure.
+then ask me what i want to do.
+
 clear any previous meesage in the chat area of the agent and the chat when returning new messages
 
 also ask before implementing any code if i like the suggested approach. we will save a lot of time this way.

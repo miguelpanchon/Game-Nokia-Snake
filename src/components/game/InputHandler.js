@@ -1,12 +1,18 @@
-export class InputHandler {
-    constructor(gameManager) {
+export class InputHandler { // Class to handle user input
+
+    constructor(gameManager) { // Constructor to initialize InputHandler
+
         this.gameManager = gameManager;
         this.bindEvents();
     }
 
     bindEvents() {
         document.addEventListener('keydown', (event) => {
-            if (event.code === 'Space') {
+            if (event.code === this.specialAbilityKey) { // Check for special ability key
+                this.triggerSpecialAbility(); // Trigger special ability
+                return;
+            } else if (event.code === 'Space') {
+
                 if (this.gameManager.currentGameState === 'menu' || this.gameManager.currentGameState === 'gameover') {
                     this.gameManager.currentGameState = 'playing';
                     this.gameManager.snake.init();

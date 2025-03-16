@@ -94,4 +94,9 @@ export class Snake {
             );
         });
     }
+
+    getHead() {
+        return this.body[0];
+    }
+
 }

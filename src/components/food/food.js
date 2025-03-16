@@ -8,6 +8,8 @@ export class Food {
         this.position = { x: 0, y: 0 };
         this.generateFood(); // Generate initial position
         this.type = this.randomFoodType(); // Set random food type
+        this.type = this.randomFoodType(); // Ensure food type is set each time food is generated
+
     }
 
     generateFood(snakeBody = []) {
@@ -24,7 +26,9 @@ export class Food {
             }
         } while (this.isOnSnake(newPosition, snakeBody));
 
-        this.position = newPosition;
+        this.position = newPosition; // Update food position
+        this.type = this.randomFoodType(); // Set random food type for new position
+
     }
 
     isOnSnake(position, snakeBody) {

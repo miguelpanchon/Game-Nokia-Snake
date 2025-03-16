@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "github.com/modelcontextprotocol/servers/tree/main/src/memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "d:/aaaprogramming/Porjects/Games/Game1/Game-Nokia-Snake"
+      ]
+    },
+    "github.com/GLips/Figma-Context-MCP": {
+      "command": "npx",
+      "args": ["-y", "figma-developer-mcp", "--stdio"],
+      "env": {
+        "FIGMA_API_KEY": "<your-figma-api-key>"
+      }
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking": {
+    "github.com/modelcontextprotocol/servers/tree/main/src/sqlite": {
+        "command": "uv",
+        "args": [
+            "--directory",
+            "parent_of_servers_repo/servers/src/sqlite",
+            "run",
+            "mcp-server-sqlite",
+            "--db-path",
+            "~/test.db"
+        ]
+    },
+
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    }
+  }
+}

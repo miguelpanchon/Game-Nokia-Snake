@@ -2,8 +2,13 @@ import { Snake } from '../snake/snake.js';
 import { Food } from '../food/food.js';
 import { GRID_SIZE, CELL_SIZE } from '../../config/constants.js';
 
+import { GameManager } from './GameManager.js';
+
 export class Game {
+
     constructor(canvasId) {
+        this.gameManager = new GameManager(); // Initialize GameManager
+
         this.canvas = document.getElementById(canvasId);
         this.ctx = this.canvas.getContext('2d');
 
@@ -94,20 +99,49 @@ export class Game {
             this.isGameOver = true;
             this.gameSound.pause(); // Stop the gameplay sound
             this.gameOverSound.play().catch(error => console.log("Audio play error:", error)); // Play game over sound
-
+            this.drawCollisionEffect(); // Draw collision effect
             return;
         }
 
-        // Check for food collision
+        // Check for food collision and update game state
+        this.gameManager.update(); // Update game logic
+
+        // Check for special food collision
+        if (this.gameManager.specialFood && head.x === this.gameManager.specialFood.position.x && head.y === this.gameManager.specialFood.position.y) {
+            this.score += 50; // Extra points for special food
+            this.snake.grow();
+            this.eatingSound.play().catch(error => console.log("Audio play error:", error)); // Play eating sound
+            this.drawEatingEffect(); // Draw eating effect
+            this.gameManager.specialFood = null; // Reset special food after collection
+        }
+
+
         const head = this.snake.body[0];
         if (head.x === this.food.position.x && head.y === this.food.position.y) {
             this.score += this.food.type === 'special' ? 20 : 10; // Different points for food types
 
             this.snake.grow();
             this.eatingSound.play().catch(error => console.log("Audio play error:", error)); // Play eating sound
+            this.drawEatingEffect(); // Draw eating effect
 
             this.food.spawn(this.snake.body);
         }
+    }
+
+    drawEatingEffect() {
+        this.ctx.fillStyle = 'rgba(255, 255, 0, 0.5)'; // Yellow flash
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        setTimeout(() => {
+            this.draw(); // Redraw the game after the effect
+        }, 100); // Flash duration
+    }
+
+    drawCollisionEffect() {
+        this.ctx.fillStyle = 'rgba(255, 0, 0, 0.5)'; // Red flash
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        setTimeout(() => {
+            this.draw(); // Redraw the game after the effect
+        }, 100); // Flash duration
     }
 
     spawnPowerUps() {

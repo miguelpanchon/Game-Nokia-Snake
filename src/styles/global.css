@@ -1,0 +1,13 @@
+/* Global Styles for Theme System */
+
+body.light-theme {
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Dark text */
+}
+
+body.dark-theme {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+/* Additional styles for theme-specific elements can be added here */

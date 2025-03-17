@@ -13,7 +13,11 @@ export class TouchControls {
         directions.forEach(direction => {
             const button = document.createElement('button');
             button.innerText = direction.charAt(0).toUpperCase() + direction.slice(1);
-            button.addEventListener('click', () => this.handleButtonPress(direction));
+            button.addEventListener('click', () => {
+                console.log(`Button pressed: ${direction}`); // Debugging log
+                this.handleButtonPress(direction);
+            });
+
             buttonContainer.appendChild(button);
         });
 
